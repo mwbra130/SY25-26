@@ -1,25 +1,42 @@
-# The initial lineup
 lineup = [
     ("Code Play", "Indie", 30),
     ("The Pythonistas", "Rock", 45),
     ("Syntax Error", "Metal", 60)
 ]
 
-# 1. Add the headliner using .append()
-headliner = ("The Byte Beats", "Synthwave", 90)
-lineup.append(headliner)
+("\n---Py-Fest 2026 Stage Manager---")
+print("1. View Lineup & Total Time")
+print("2. Add a New Band")
+print("3. Move First Band to End (Late Arrival)")
+print("4. Remove a Band by Name")
+print("5. Move Band to Specific Position")
+print("6. Exit")
+choice = input("Select an option (1-6): ")
 
-# 2. Emergency Swap: Move the first band to the end
-late_band = lineup.pop(0) 
-lineup.append(late_band)
+# 1. Find the Band and its current index
+if choice == "1":
+    print("\n--- Current Lineup ---")
+    print(lineup)
+    total_time = 0
+    for i, (name, genre, duration) in enumerate(lineup, 1):
+        total_time += duration
+    print(f"Total Festival Duration: {total_time} minute")
 
-# 3. Security Check: Remove a specific band by value using .remove()
-band_to_remove = ("The Pythonistas", "Rock", 45)
-lineup.remove(band_to_remove)
+# 2. Get the new position from user
+elif choice == "2":
+    name = input("Enter Band Name: ")
+    genre = input("Enter Genre: ")
+    duration = int(input("Enter Performance Duration (minutes): "))
+    print(f"{name} added!")
+#3. Remove from old spot, insert in new spot
+elif choice == "3":
 
-# 4. Calculate Total Time using a for loop and tuple unpacking
-total_duration = 0
-for name, genre, duration in lineup:
-    total_duration += duration
-print(lineup)
-print(f"\nTotal festival duration: {total_duration} minutes")
+#4. 
+elif choice == "4":
+
+
+#5.
+elif choice == "5":
+
+#6. 
+elif choice == "6":
