@@ -1,5 +1,6 @@
 import pygame
 import random
+import os
 
 # Initialize Pygame
 pygame.init()
@@ -10,14 +11,15 @@ WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 
+
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-player_image = pygame.image.load(os.path.join('sprite.png')).convert_alpha()
 clock = pygame.time.Clock()
 
 # Player properties
 player_pos = [WIDTH // 2, HEIGHT - 50]
 player_size = 50
-
+player_image = pygame.image.load(os.path.join('Sprite.png')).convert_alpha()
+player_image = pygame.transform.scale(player_image, (player_size, player_size))
 # Enemy properties
 enemy_size = 50
 enemy_pos = [random.randint(0, WIDTH - enemy_size), 0]
@@ -60,8 +62,7 @@ while not game_over:
     screen.fill((0, 0, 0))
     
     pygame.draw.rect(screen, RED, (enemy_pos[0], enemy_pos[1], enemy_size, enemy_size))
-    pygame.draw.rect(screen, BLUE, (player_pos[0], player_pos[1], player_size, player_size))
-
+    screen.blit(player_image, (player_pos[0], player_pos[1]))
     pygame.display.update()
     clock.tick(30)
 
