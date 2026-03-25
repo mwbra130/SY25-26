@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Box_Game", "Box_Game\Box_Game.pyproj", "{C116F128-ABA5-4AEC-9C14-05576ADFD2F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C116F128-ABA5-4AEC-9C14-05576ADFD2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C116F128-ABA5-4AEC-9C14-05576ADFD2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F93ECA25-6C2B-48A7-95EC-86F7CFE0B29F}
+	EndGlobalSection
+EndGlobal
