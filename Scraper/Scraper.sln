@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Scraper", "Scraper\Scraper.pyproj", "{B8ECEA6F-BA52-4AF6-8D0F-38B441A9C202}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8ECEA6F-BA52-4AF6-8D0F-38B441A9C202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8ECEA6F-BA52-4AF6-8D0F-38B441A9C202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A450603-F7C4-4D09-BC1E-7A015F1FAD6A}
+	EndGlobalSection
+EndGlobal
